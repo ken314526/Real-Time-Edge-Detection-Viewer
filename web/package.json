@@ -1,0 +1,15 @@
+{
+  "name": "vision-web-viewer",
+  "version": "1.0.0",
+  "description": "Minimal TypeScript viewer for processed frames",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 src/*.html src/*.css dist",
+    "start": "npm run build && npx serve dist"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "serve": "^14.2.0",
+    "typescript": "^5.2.2"
+  }
+}
+
